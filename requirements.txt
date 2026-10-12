@@ -1,0 +1,21 @@
+# Direct dependencies used by the notebooks; this is not a reproducibility lock file.
+# For GPU use, install a compatible PyTorch / torchvision pair for your CUDA first.
+# Colab already provides most of the numerical stack; use the notebook install cells there.
+torch>=2.3
+torchvision>=0.18
+numpy
+pandas
+opencv-python-headless
+matplotlib
+Pillow
+tqdm
+huggingface_hub>=0.23
+shapely>=2
+pycocotools
+gradio>=4.40,<6
+gdown>=5.2,<6
+# Only needed when the FOTBCD-Binary fallback is used.
+datasets>=3,<5
+
+# Local Jupyter interface; Colab already provides a notebook environment.
+jupyterlab>=4,<5
